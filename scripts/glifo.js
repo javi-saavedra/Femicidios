@@ -8,8 +8,8 @@ async function glifo(height, width) {
     .data(opciones)
     .enter()
     .append('option')
-    .text(function (d) { return d; }) // text showed in the menu
-    .attr("value", function (d) { return d; }) // corresponding value returned by the button
+    .text(function (d) { return d; }) 
+    .attr("value", function (d) { return d; }) 
     .attr("class", "items")
 
 
@@ -75,8 +75,6 @@ async function glifo(height, width) {
     .append("g")
     .attr("transform", "rotate(90)")
     .attr("id", "axis3")
-  
-  // const data = data[0];
 
   let yTick3 = yAxis3
   .selectAll("g")
@@ -254,40 +252,6 @@ async function glifo(height, width) {
       .attr("y", (d) => escalaYDetalle(d[1]))
       .attr("stroke", "white")
       .attr("fill", "white");
-  
-  
-  const brushed = (e) => {
-    const seleccion = e.selection;
-    console.log(seleccion);
-  
-  
-    /*const comunasIn = verificar_comuna(seleccion[0], seleccion[1], boundsData);
-
-    const nombres = comunasIn.map((d) => d.nombre.slice(0,5));
-    const ids = Array(nombres.length).fill().map((_, idx) => (idx)*((WIDTH_DETALLE-50)/nombres.length))
-    escalaXDetalle.domain(nombres);
-    escalaXDetalle.range(ids)
-    
-    const porcentajes = comunasIn.map((d, i) => [viviendas[d.id], mujeres[d.id], d.nombre.slice(0,5)]);
-
-    contenedorEjeXDetalle.call(d3.axisBottom(escalaXDetalle));
-
-    contenedorEjeXDetalle.selectAll("text")
-      .attr("transform", `translate(0,10)rotate(-65)`)
-    let aiuda = porcentajes.map((d) => escalaAltura(d[1]))
-    console.log(aiuda)
-
-    contenedorBarrasVertical
-      .selectAll("rect")
-      .data(porcentajes)
-      .join("rect")
-        .attr("width", (d) => (WIDTH_DETALLE-50)/nombres.length)
-        .attr("height", (d) => `${escalaAltura(d[1])}`)
-        .attr("x", (d) => escalaXDetalle(d[2]))
-        .attr("y", (d) => escalaYDetalle(d[1]))
-        .attr("stroke", "white")
-        .attr("fill", (d) => fillScale(d[0]));*/
-  }
 
   contenedorEjeXDetalle.call(d3.axisBottom(escalaXDetalle));
   contenedorEjeYDetalle.call(d3.axisLeft(escalaYDetalle));
