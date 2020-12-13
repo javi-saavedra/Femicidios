@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lilita One');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+text {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: lighter;
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: 'Nunito';
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+}
+
+li{
+  margin-bottom: 2%;
+}
+
+body {
+  background-color: black;
+}
+
+.menu{
+  background-color: #5907AA;
+  box-shadow: 2px 1px 5px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.menu-link{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-left: 20px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: lighter;
+}
+
+.menu-link:hover{
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.col {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+}
+
+.info-fem {
+  /*font-family: 'Fira Sans', sans-serif;*/
+  font-family: 'Nunito';
+  font-weight: lighter;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.ticks {
+  color: white;
+}
+
+#creditos {
+  color: white;
+  font-family: 'Nunito';
+  font-size: 0.7rem;
+  text-align: center;
+  margin-bottom: 0vh;
+  margin-top: 3vh;
+}
+
+#creditos a {
+  text-decoration: none;
+  color: white;
+}
+
+#creditos a:hover {
+  text-decoration: underline;
+}
+
+#graph {
+  margin-top: 5vh;
+}
+
+#detalle {
+  background-color: #270061;
+}
+
+#contenedorPrincipal {
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  margin-left: 4vw;
+}
+
+#Link {
+  text-decoration: none;
+  color: #591895;
+  margin-bottom: 2vh;
+  font-family: 'Nunito';
+  font-weight: lighter;
+}
+
+#legend {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  max-width: 20vw;
+}
+
+#svg-glifo {
+  border-color: none;
+}
+
+#svg-legend {
+  border-color: black;
+  border-style: solid;
+}
+
+#tooltip {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: lighter;
+  color: '#B2B9B8';
+  background-color: white;
+}
+
+#title {
+  font-family: 'Kaushan Script';
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1vh;
+  margin-top: 3vh;
+}
+
+#text-legend {
+  font-family: 'Nunito';
+  font-size: 0.8rem;
+  margin-bottom: 0vh;
+  padding: 0vh 0vw;
+}
+
+#informacion {
+  width: 28vw;
+  height: 30vh;
+  background-color: #d0b2da;
+  border-radius: 5px;
+  padding: 1.5vh 2vw;
+  padding-bottom: 2vh;
+  text-align: center;
+  justify-content: left;
+  align-self: center;
+  overflow: scroll;
+  direction: ltr;
+}
+
+#selectButton {
+  font-family: 'Nunito';
+  background-color: #270061;
+  height: 5vh;
+  padding: 0vh 2vw;
+  color: white;
+}
+
